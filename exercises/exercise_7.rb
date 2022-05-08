@@ -10,3 +10,10 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+new_store = Store.create(name: gets.chomp)
+
+pp new_store.errors.messages
+pp new_store.errors.full_messages
+pp new_store.errors.details
+pp new_store.errors.where(:name)
